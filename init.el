@@ -125,10 +125,12 @@
   (require 'init-misc)
 
   ;; comment below line if you want to setup color theme in your own way
-  (if (or (display-graphic-p) (string-match-p "256color"(getenv "TERM"))) (require 'init-color-theme))
+  (if (or (display-graphic-p) (string-match-p "256color"(getenv "TERM"))) (require 'init-themes))
 
   (require 'init-emacs-w3m)
   (require 'init-hydra)
+  (require 'init-fiplr)
+  (require 'init-window-numbering)
 
   ;; {{ idle require other stuff
   (setq idle-require-idle-delay 2)

@@ -50,4 +50,7 @@
 (defadvice linum-schedule (around my-linum-schedule () activate)
   (run-with-idle-timer 1 nil #'linum-update-current))
 
+(setq linum-format "%3d ")
+(setq column-number-mode t)
+
 (provide 'init-linum-mode)
