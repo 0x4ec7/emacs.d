@@ -752,9 +752,9 @@ If no region is selected. You will be asked to use `kill-ring' or clipboard inst
   (message "indent-tabs-mode=%s" indent-tabs-mode))
 
 ;; {{ auto-save.el
-(require 'auto-save)
-(auto-save-enable)
-(setq auto-save-slient t)
+;; (require 'auto-save)
+;; (auto-save-enable)
+;; (setq auto-save-slient t)
 ;; }}
 
 ;; {{ csv
