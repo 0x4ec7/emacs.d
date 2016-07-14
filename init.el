@@ -134,6 +134,7 @@
   (require 'init-undo-tree)
   (require 'init-neotree)
   (require 'init-smartparens)
+  (require 'init-go-mode)
 
   ;; {{ idle require other stuff
   (setq idle-require-idle-delay 2)
