@@ -809,6 +809,7 @@ If no region is selected. You will be asked to use `kill-ring' or clipboard inst
     (comment-or-uncomment-region beg end)))
 (global-set-key (kbd "M-;") 'comment-or-uncomment-region-or-line)
 
+(require 'multiple-cursors)
 (global-set-key (kbd "C-c C-e") 'mc/edit-lines)
 (global-set-key (kbd "C-c C-n") 'mc/mark-next-like-this-symbol)
 (global-set-key (kbd "C-c C-p") 'mc/mark-previous-symbol-like-this)

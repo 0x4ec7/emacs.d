@@ -7,17 +7,21 @@
 
 (defun python-mode-hook-setup ()
   (unless (is-buffer-file-temp)
+    ;; run command `pip install jedi flake8 importmagic` in shell,
+    ;; or just check https://github.com/jorgenschaefer/elpy
+    (if (fboundp 'elpy-enable) (elpy-enable) (elpy-mode 1))
+;;    (define-key elpy-mode-map (kbd "M-TAB") nil)
+    (eval-after-load "elpy"
+      '(cl-dolist (key '("C-c C-a" "C-c C-e" "C-c C-s" "C-c C-p" "C-c C-n"))
+         (define-key elpy-mode-map (kbd key) nil)))
+    (eval-after-load "python"
+      '(cl-dolist (key '("C-c C-a" "C-c C-e" "C-c C-s" "C-c C-p" "C-c C-n"))
+         (define-key python-mode-map (kbd key) nil)))
     ;; http://emacs.stackexchange.com/questions/3322/python-auto-indent-problem/3338#3338
     ;; emacs 24.4 only
     (setq electric-indent-chars (delq ?: electric-indent-chars))))
 
 (add-hook 'python-mode-hook 'python-mode-hook-setup)
-(require 'multiple-cursors)
-(add-hook 'python-mode-hook
-          (lambda ()
-            (local-unset-key (kbd "C-c C-s"))
-            (local-unset-key (kbd "C-c C-n"))
-            (local-unset-key (kbd "C-c C-p"))))
 
 (require 'whitespace)
 (setq whitespace-line-column 79)
