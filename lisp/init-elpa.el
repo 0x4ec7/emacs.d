@@ -61,7 +61,8 @@ But you may use safer HTTPS instead.")
     erlang
     workgroups2
     company-c-headers
-    material-theme)
+    material-theme
+    undo-tree)
   "Don't install any Melpa packages except these packages")
 
 ;; We include the org repository for completeness, but don't use it.

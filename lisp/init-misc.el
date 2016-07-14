@@ -797,6 +797,24 @@ If no region is selected. You will be asked to use `kill-ring' or clipboard inst
 (add-hook 'css-mode-hook  'emmet-mode)
 (add-hook 'rjsx-mode-hook  'emmet-mode)
 ;; }}
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+
+(defun comment-or-uncomment-region-or-line ()
+  "Comments or uncomments the region or the current line if there's no active region."
+  (interactive)
+  (let (beg end)
+    (if (region-active-p)
+        (setq beg (region-beginning) end (region-end))
+      (setq beg (line-beginning-position) end (line-end-position)))
+    (comment-or-uncomment-region beg end)))
+(global-set-key (kbd "M-;") 'comment-or-uncomment-region-or-line)
+
+(global-set-key (kbd "C-c C-e") 'mc/edit-lines)
+(global-set-key (kbd "C-c C-n") 'mc/mark-next-like-this-symbol)
+(global-set-key (kbd "C-c C-p") 'mc/mark-previous-symbol-like-this)
+(global-set-key (kbd "C-c C-a") 'mc/mark-all-symbols-like-this)
+(global-set-key (kbd "C-c C-s") 'mc--mark-symbol-at-point)
+
 
 (autoload 'verilog-mode "verilog-mode" "Verilog mode" t )
 (add-to-list 'auto-mode-alist '("\\.[ds]?vh?\\'" . verilog-mode))

@@ -12,5 +12,16 @@
     (setq electric-indent-chars (delq ?: electric-indent-chars))))
 
 (add-hook 'python-mode-hook 'python-mode-hook-setup)
+(require 'multiple-cursors)
+(add-hook 'python-mode-hook
+          (lambda ()
+            (local-unset-key (kbd "C-c C-s"))
+            (local-unset-key (kbd "C-c C-n"))
+            (local-unset-key (kbd "C-c C-p"))))
+
+(require 'whitespace)
+(setq whitespace-line-column 79)
+(setq whitespace-style '(face lines-tail))
+(add-hook 'python-mode-hook 'whitespace-mode)
 
 (provide 'init-python-mode)

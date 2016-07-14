@@ -131,6 +131,9 @@
   (require 'init-hydra)
   (require 'init-fiplr)
   (require 'init-window-numbering)
+  (require 'init-undo-tree)
+  (require 'init-neotree)
+  (require 'init-smartparens)
 
   ;; {{ idle require other stuff
   (setq idle-require-idle-delay 2)
