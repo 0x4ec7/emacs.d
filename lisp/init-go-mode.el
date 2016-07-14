@@ -1,5 +1,3 @@
-(require-package 'go-mode)
-(require-package 'company)
 (require-package 'company-go)
 
 (defun go-mode-setup ()

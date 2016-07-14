@@ -1,0 +1,32 @@
+(require 'bind-key)
+
+(require 'multiple-cursors)
+(bind-key* "C-c C-e" 'mc/edit-lines)
+(bind-key* "C-c C-n" 'mc/mark-next-like-this-symbol)
+(bind-key* "C-c C-p" 'mc/mark-previous-symbol-like-this)
+(bind-key* "C-c C-a" 'mc/mark-all-symbols-like-this)
+(bind-key* "C-c C-s" 'mc--mark-symbol-at-point)
+
+(require 'fiplr)
+(bind-key* "C-x C-f" 'fiplr-find-file)
+
+(require 'window-numbering)
+(bind-key* "C-x <up>" 'windove-up)
+(bind-key* "C-x <down>" 'windmove-down)
+(bind-key* "C-x <right>" 'windmove-right)
+(bind-key* "C-x <left>" 'windmove-left)
+(bind-key* "C-x 2" (lambda () (interactive) (split-window-below) (other-window 1)))
+(bind-key* "C-x 3" (lambda () (interactive) (split-window-right) (other-window 1)))
+
+(require 'undo-tree)
+(bind-key* "C-x u" 'undo-tree-visualize)
+
+(require 'neotree)
+(bind-key* "C-c t" 'neotree-toggle)
+(bind-key* "C-c p" 'neotree-ffip-project-dir)
+
+
+(bind-key* "C-k" 'kill-whole-line)
+(bind-key* "M-;" 'comment-or-uncomment-region-or-line)
+
+(provide 'init-bind-key)

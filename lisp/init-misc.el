@@ -807,14 +807,6 @@ If no region is selected. You will be asked to use `kill-ring' or clipboard inst
         (setq beg (region-beginning) end (region-end))
       (setq beg (line-beginning-position) end (line-end-position)))
     (comment-or-uncomment-region beg end)))
-(global-set-key (kbd "M-;") 'comment-or-uncomment-region-or-line)
-
-(require 'multiple-cursors)
-(global-set-key (kbd "C-c C-e") 'mc/edit-lines)
-(global-set-key (kbd "C-c C-n") 'mc/mark-next-like-this-symbol)
-(global-set-key (kbd "C-c C-p") 'mc/mark-previous-symbol-like-this)
-(global-set-key (kbd "C-c C-a") 'mc/mark-all-symbols-like-this)
-(global-set-key (kbd "C-c C-s") 'mc--mark-symbol-at-point)
 
 
 (autoload 'verilog-mode "verilog-mode" "Verilog mode" t )

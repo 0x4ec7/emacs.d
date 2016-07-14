@@ -1,4 +1,4 @@
-(require-package 'neotree)
+(require 'neotree)
 (setq neo-smart-open t)
 
 (defun neotree-ffip-project-dir ()
@@ -11,8 +11,5 @@
 	  (neotree-dir project-dir)
 	  (neotree-find file-name))
       (message "Could not find git project root."))))
-
-(global-set-key (kbd "C-c t") 'neotree-toggle)
-(global-set-key (kbd "C-c p") 'neotree-ffip-project-dir)
 
 (provide 'init-neotree)
