@@ -132,7 +132,6 @@
   (require 'init-window-numbering)
   (require 'init-undo-tree)
   (require 'init-neotree)
-  (require 'init-smartparens)
   (require 'init-go-mode)
   (require 'init-bind-key)
 
