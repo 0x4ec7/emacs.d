@@ -1,4 +1,5 @@
-(require-package 'smartparens)
+(require 'smartparens-config)
+
 (add-hook 'python-mode-hook 'smartparens-mode)
 (add-hook 'go-mode-hook 'smartparens-mode)
 

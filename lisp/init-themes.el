@@ -1,4 +1,4 @@
-(require-package 'material-theme)
+(require 'material-theme)
 
 ;; If you don't customize it, this is the theme you get.
 (setq-default custom-enabled-themes '(material))

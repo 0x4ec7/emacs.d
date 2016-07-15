@@ -1,4 +1,4 @@
-(require-package 'company-go)
+(require 'company-go)
 
 (defun go-mode-setup ()
   (setq compile-command "go build -v && go test -v && go vet")

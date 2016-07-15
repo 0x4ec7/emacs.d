@@ -274,6 +274,8 @@ But you may use safer HTTPS instead.")
 (require-package 'smartparens)
 (require-package 'go-mode)
 (require-package 'bind-key)
->>>>>>> 添加bind-key
+(require-package 'company-go)
+(require-package 'window-numbering)
+(require-package 'material-theme)
 
 (provide 'init-elpa)
