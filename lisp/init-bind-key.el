@@ -1,5 +1,7 @@
 (require 'bind-key)
 
+(bind-key* "C-q" 'isearch-forward-symbol-at-point)
+
 (require 'multiple-cursors)
 (bind-key* "C-c C-e" 'mc/edit-lines)
 (bind-key* "C-c C-n" 'mc/mark-next-like-this-symbol)
