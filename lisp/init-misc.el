@@ -799,7 +799,7 @@ If no region is selected. You will be asked to use `kill-ring' or clipboard inst
 ;; }}
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
-(defun comment-or-uncomment-region-or-line ()
+(defun my/comment-or-uncomment-region-or-line ()
   "Comments or uncomments the region or the current line if there's no active region."
   (interactive)
   (let (beg end)
@@ -807,6 +807,20 @@ If no region is selected. You will be asked to use `kill-ring' or clipboard inst
         (setq beg (region-beginning) end (region-end))
       (setq beg (line-beginning-position) end (line-end-position)))
     (comment-or-uncomment-region beg end)))
+
+(defun my/newline-above ()
+  "insert a new line above the line"
+  (interactive)
+  (move-beginning-of-line 1)
+  (newline-and-indent)
+  (previous-line)
+  (indent-for-tab-command))
+
+(defun my/newline-below ()
+  "insert a new line below the line"
+  (interactive)
+  (move-end-of-line 1)
+  (newline-and-indent))
 
 
 (autoload 'verilog-mode "verilog-mode" "Verilog mode" t )

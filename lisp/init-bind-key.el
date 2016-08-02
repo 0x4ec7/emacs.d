@@ -29,6 +29,8 @@
 
 
 (bind-key* "C-k" 'kill-whole-line)
-(bind-key* "M-;" 'comment-or-uncomment-region-or-line)
+(bind-key* "M-;" 'my/comment-or-uncomment-region-or-line)
+(bind-key* "M-o" 'my/newline-above)
+(bind-key* "C-o" 'my/newline-below)
 
 (provide 'init-bind-key)
