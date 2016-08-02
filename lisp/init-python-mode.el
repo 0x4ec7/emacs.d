@@ -16,6 +16,8 @@
          (define-key elpy-mode-map (kbd key) nil)))
     (eval-after-load "python"
       '(cl-dolist (key '("C-c C-a" "C-c C-e" "C-c C-s" "C-c C-p" "C-c C-n"))
+    (eval-after-load "python"
+      '(cl-dolist (key '("DEL"))
          (define-key python-mode-map (kbd key) nil)))
     ;; http://emacs.stackexchange.com/questions/3322/python-auto-indent-problem/3338#3338
     ;; emacs 24.4 only
