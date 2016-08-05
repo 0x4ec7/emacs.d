@@ -19,9 +19,12 @@
     (eval-after-load "python"
       '(cl-dolist (key '("DEL"))
          (define-key python-mode-map (kbd key) nil)))
-    ;; http://emacs.stackexchange.com/questions/3322/python-auto-indent-problem/3338#3338
-    ;; emacs 24.4 only
-    (setq electric-indent-chars (delq ?: electric-indent-chars))))
+    (setq electric-indent-chars (delq ?: electric-indent-chars))
+    (setq require-final-newline t)
+    (setq mode-require-final-newline t)
+    (eval-after-load "python"
+      '(cl-dolist (key '("DEL"))
+         (define-key python-mode-map (kbd key) nil)))))
 
 (add-hook 'python-mode-hook 'python-mode-hook-setup)
 
