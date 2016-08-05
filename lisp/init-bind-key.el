@@ -1,6 +1,9 @@
 (require 'bind-key)
 
 (bind-key* "C-q" 'isearch-forward-symbol-at-point)
+;; disable C-z & C-x C-z to avoid exiting emacs by mistake
+(bind-key* "C-z" 'undo-tree-undo)
+(bind-key* "C-x C-z" 'undo-tree-visualize)
 
 (require 'multiple-cursors)
 (bind-key* "C-c C-e" 'mc/edit-lines)
