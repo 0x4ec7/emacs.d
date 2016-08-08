@@ -134,6 +134,7 @@
   (require 'init-neotree)
   (require 'init-go-mode)
   (require 'init-bind-key)
+  (require 'init-flycheck)
 
   ;; {{ idle require other stuff
   (setq idle-require-idle-delay 2)
