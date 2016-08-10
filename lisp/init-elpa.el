@@ -277,5 +277,6 @@ But you may use safer HTTPS instead.")
 (require-package 'window-numbering)
 (require-package 'material-theme)
 (require-package 'flycheck)
+(require-package 'flycheck-tip)
 
 (provide 'init-elpa)
