@@ -135,6 +135,7 @@
   (require 'init-go-mode)
   (require 'init-bind-key)
   (require 'init-flycheck)
+  (require 'init-smartparens)
 
   ;; {{ idle require other stuff
   (setq idle-require-idle-delay 2)

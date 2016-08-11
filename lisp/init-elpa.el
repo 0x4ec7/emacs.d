@@ -278,5 +278,6 @@ But you may use safer HTTPS instead.")
 (require-package 'material-theme)
 (require-package 'flycheck)
 (require-package 'flycheck-tip)
+(require-package 'smartparens)
 
 (provide 'init-elpa)
