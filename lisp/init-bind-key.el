@@ -30,6 +30,9 @@
 (bind-key* "C-c t" 'neotree-toggle)
 (bind-key* "C-c p" 'neotree-ffip-project-dir)
 
+(require 'swiper)
+(bind-key* "C-s" 'swiper)
+(bind-key* "C-r" 'swiper-the-thing)
 
 (bind-key* "C-k" 'kill-whole-line)
 (bind-key* "M-;" 'my/comment-or-uncomment-region-or-line)
