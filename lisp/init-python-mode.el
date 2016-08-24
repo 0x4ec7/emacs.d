@@ -11,14 +11,6 @@
     ;; or just check https://github.com/jorgenschaefer/elpy
     (if (fboundp 'elpy-enable) (elpy-enable) (elpy-mode 1))
 ;;    (define-key elpy-mode-map (kbd "M-TAB") nil)
-    (eval-after-load "elpy"
-      '(cl-dolist (key '("C-c C-a" "C-c C-e" "C-c C-s" "C-c C-p" "C-c C-n"))
-         (define-key elpy-mode-map (kbd key) nil)))
-    (eval-after-load "python"
-      '(cl-dolist (key '("C-c C-a" "C-c C-e" "C-c C-s" "C-c C-p" "C-c C-n"))
-    (eval-after-load "python"
-      '(cl-dolist (key '("DEL"))
-         (define-key python-mode-map (kbd key) nil)))
     (setq electric-indent-chars (delq ?: electric-indent-chars))
     (setq require-final-newline t)
     (setq mode-require-final-newline t)
