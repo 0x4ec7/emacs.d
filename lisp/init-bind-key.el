@@ -36,4 +36,8 @@
 (bind-key* "M-o" 'my/newline-above)
 (bind-key* "C-o" 'my/newline-below)
 
+(bind-key* "<f7>" 'flycheck-previous-error)
+(bind-key* "<f8>" 'flycheck-list-errors)
+(bind-key* "<f9>" 'flycheck-next-error)
+
 (provide 'init-bind-key)
