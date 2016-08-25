@@ -29,4 +29,8 @@
   (load-theme 'material t))
 
 
+(require 'powerline)
+(powerline-default-theme)
+
+
 (provide 'init-themes)
