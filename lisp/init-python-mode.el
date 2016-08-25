@@ -13,10 +13,7 @@
 ;;    (define-key elpy-mode-map (kbd "M-TAB") nil)
     (setq electric-indent-chars (delq ?: electric-indent-chars))
     (setq require-final-newline t)
-    (setq mode-require-final-newline t)
-    (eval-after-load "python"
-      '(cl-dolist (key '("DEL"))
-         (define-key python-mode-map (kbd key) nil)))))
+    (setq mode-require-final-newline t)))
 
 (add-hook 'python-mode-hook 'python-mode-hook-setup)
 
