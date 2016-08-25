@@ -34,6 +34,7 @@
 (bind-key* "C-s" 'swiper)
 (bind-key* "C-r" 'swiper-the-thing)
 (bind-key* "C-c m" 'counsel-imenu-goto)
+(bind-key "C-c C-c" 'swiper-mc swiper-map)
 
 (bind-key* "C-k" 'kill-whole-line)
 (bind-key* "M-;" 'my/comment-or-uncomment-region-or-line)
