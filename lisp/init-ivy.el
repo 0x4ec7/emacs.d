@@ -468,4 +468,10 @@ If N is nil, use `ivy-mode' to browse the `kill-ring'."
 (global-set-key (kbd "C-s") 'swiper)
 ;; }}
 
+(setq ivy-re-builders-alist
+      '((t . ivy--regex-fuzzy)))
+(setq ivy-initial-inputs-alist nil)
+
+(global-set-key (kbd "M-x") 'counsel-M-x)
+
 (provide 'init-ivy)
