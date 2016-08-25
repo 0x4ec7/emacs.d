@@ -279,5 +279,6 @@ But you may use safer HTTPS instead.")
 (require-package 'flycheck)
 (require-package 'flycheck-tip)
 (require-package 'smartparens)
+(require-package 'smex)
 
 (provide 'init-elpa)
