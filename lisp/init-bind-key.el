@@ -45,4 +45,6 @@
 (bind-key* "<f8>" 'flycheck-list-errors)
 (bind-key* "<f9>" 'flycheck-next-error)
 
+(bind-key* "C-x b" 'ivy-switch-buffer)
+
 (provide 'init-bind-key)
