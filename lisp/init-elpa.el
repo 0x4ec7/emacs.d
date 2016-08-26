@@ -62,7 +62,8 @@ But you may use safer HTTPS instead.")
     workgroups2
     company-c-headers
     material-theme
-    undo-tree)
+    undo-tree
+    try)
   "Don't install any Melpa packages except these packages")
 
 ;; We include the org repository for completeness, but don't use it.
@@ -281,5 +282,6 @@ But you may use safer HTTPS instead.")
 (require-package 'smartparens)
 (require-package 'smex)
 (require-package 'powerline)
+(require-package 'try)
 
 (provide 'init-elpa)
