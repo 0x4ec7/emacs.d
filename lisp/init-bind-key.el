@@ -42,7 +42,7 @@
 (bind-key* "C-o" 'my/newline-below)
 
 (bind-key* "<f7>" 'flycheck-previous-error)
-(bind-key* "<f8>" 'flycheck-list-errors)
+(bind-key* "<f8>" (lambda () (interactive) (flycheck-buffer) (flycheck-list-errors)))
 (bind-key* "<f9>" 'flycheck-next-error)
 
 (bind-key* "C-x b" 'ivy-switch-buffer)
