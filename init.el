@@ -136,6 +136,7 @@
   (require 'init-bind-key)
   (require 'init-flycheck)
   (require 'init-smartparens)
+  (require 'init-magit)
 
   ;; {{ idle require other stuff
   (setq idle-require-idle-delay 2)

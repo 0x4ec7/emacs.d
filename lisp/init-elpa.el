@@ -283,5 +283,6 @@ But you may use safer HTTPS instead.")
 (require-package 'smex)
 (require-package 'powerline)
 (require-package 'try)
+(require-package 'magit)
 
 (provide 'init-elpa)
