@@ -22,4 +22,5 @@
 (setq whitespace-style '(face lines-tail))
 (add-hook 'python-mode-hook 'whitespace-mode)
 
+
 (provide 'init-python-mode)
