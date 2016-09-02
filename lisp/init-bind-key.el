@@ -48,6 +48,7 @@
 (bind-key* "C-x b" 'ivy-switch-buffer)
 (bind-key* "C-x C-b" 'ibuffer-other-window)
 (bind-key* "C-h f" 'counsel-describe-function)
-(bind-key* "C-c k" 'counsel-ag)
+(bind-key* "C-c k" 'counsel-git-grep)
+
 
 (provide 'init-bind-key)
