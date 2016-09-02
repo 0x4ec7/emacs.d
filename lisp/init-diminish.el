@@ -13,7 +13,7 @@
 (eval-after-load "files"
   '(diminish 'auto-revert-mode))
 (eval-after-load "paredit"
-  '(diminish 'paredit-mode))
+ '(diminish 'paredit-mode))
 (eval-after-load "eldoc"
   '(diminish 'eldoc-mode))
 
@@ -27,6 +27,8 @@
      (diminish 'yas-minor-mode " ⓨ ")))
 (eval-after-load "flycheck"
   '(diminish 'flycheck-mode " Ⓕ "))
+(eval-after-load "evil-escape"
+  '(diminish 'evil-escape-mode " Ⓥ "))
 
 
 (provide 'init-diminish)
