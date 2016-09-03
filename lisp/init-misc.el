@@ -797,6 +797,9 @@ If no region is selected. You will be asked to use `kill-ring' or clipboard inst
 (add-hook 'css-mode-hook  'emmet-mode)
 (add-hook 'rjsx-mode-hook  'emmet-mode)
 ;; }}
+;; turn off menu-bar-mode
+(menu-bar-mode -1)
+
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (defun my/comment-or-uncomment-region-or-line ()
