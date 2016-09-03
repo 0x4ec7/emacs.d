@@ -513,13 +513,14 @@ If the character before and after CH is space or tab, CH is NOT slash"
        "hsa" 'hs-toggle-fold-all
        "hsh" 'hs-hide-block
        "hss" 'hs-show-block
-       "hd" 'describe-function
+       "hd" 'counsel-describe-function
        "hf" 'find-function
        "hk" 'describe-key
-       "hv" 'describe-variable
        "gt" 'counsel-gtags-dwim ; jump from reference to definition or vice versa
        "gr" 'counsel-gtags-find-symbol
        "gu" 'counsel-gtags-update-tags
+       "hv" 'counsel-describe-variable
+       "hb" 'counsel-descbinds
        "fb" 'flyspell-buffer
        "fe" 'flyspell-goto-next-error
        "fa" 'flyspell-auto-correct-word
