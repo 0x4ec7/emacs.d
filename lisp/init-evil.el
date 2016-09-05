@@ -30,10 +30,12 @@
 ;; step 4, press s or S to start replace
 ;; step 5, press C-g to quit multiple-cursors
 (define-key evil-visual-state-map (kbd "mn") 'mc/mark-next-like-this)
+(define-key evil-visual-state-map (kbd "mp") 'mc/mark-previous-like-this)
 (define-key evil-visual-state-map (kbd "ma") 'mc/mark-all-like-this-dwim)
 (define-key evil-visual-state-map (kbd "md") 'mc/mark-all-like-this-in-defun)
 (define-key evil-visual-state-map (kbd "mm") 'ace-mc-add-multiple-cursors)
 (define-key evil-visual-state-map (kbd "ms") 'ace-mc-add-single-cursor)
+(define-key evil-visual-state-map (kbd "mq") 'mc/keyboard-quit)
 ;; }}
 
 ;; enable evil-mode
