@@ -493,8 +493,8 @@ If the character before and after CH is space or tab, CH is NOT slash"
        "xe" 'eval-last-sexp
        "x0" 'delete-window
        "x1" 'delete-other-windows
-       "x2" 'split-window-vertically
-       "x3" 'split-window-horizontally
+       "x2" (lambda () (interactive) (split-window-vertically) (other-window 1))
+       "x3" (lambda () (interactive) (split-window-horizontally) (other-window 1))
        "rw" 'rotate-windows
        "ru" 'undo-tree-save-state-to-register ; C-x r u
        "rU" 'undo-tree-restore-state-from-register ; C-x r U
