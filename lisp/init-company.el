@@ -33,7 +33,8 @@
            company-idle-delay 0.2
            company-clang-insert-arguments nil
            company-require-match nil
-           company-etags-ignore-case t)
+           company-etags-ignore-case t
+           company-minimum-prefix-length 1)
 
      ;; @see https://github.com/redguardtoo/emacs.d/commit/2ff305c1ddd7faff6dc9fa0869e39f1e9ed1182d
      (defadvice company-in-string-or-comment (around company-in-string-or-comment-hack activate)
