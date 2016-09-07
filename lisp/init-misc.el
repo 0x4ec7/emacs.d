@@ -800,6 +800,9 @@ If no region is selected. You will be asked to use `kill-ring' or clipboard inst
 ;; turn off menu-bar-mode
 (menu-bar-mode -1)
 
+;; frame fullscreen on start
+(toggle-frame-fullscreen)
+
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (defun my/comment-or-uncomment-region-or-line ()
