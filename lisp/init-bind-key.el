@@ -49,6 +49,7 @@
 (bind-key* "C-x C-b" 'ibuffer-other-window)
 (bind-key* "C-h f" 'counsel-describe-function)
 (bind-key* "C-c k" 'counsel-git-grep)
+(bind-key* "C-c f" 'counsel-find-file)
 
 
 (provide 'init-bind-key)
