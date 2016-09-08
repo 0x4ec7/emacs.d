@@ -14,9 +14,11 @@
   (setq company-idle-delay .1)
   (setq company-echo-delay 0)
   (setq company-begin-commands '(self-insert-command))
+  (exec-path-from-shell-copy-env "GOPATH")
   (company-mode))
 
 (add-hook 'go-mode-hook 'go-mode-setup)
 (add-hook 'go-mode-hook 'go-company-setup)
+
 
 (provide 'init-go-mode)
