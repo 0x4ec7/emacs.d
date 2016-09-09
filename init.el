@@ -140,6 +140,7 @@
   (require 'init-magit)
   (require 'init-diminish)
   (require 'init-weibo)
+  (require 'init-golden-ratio)
 
   ;; {{ idle require other stuff
   (setq idle-require-idle-delay 2)

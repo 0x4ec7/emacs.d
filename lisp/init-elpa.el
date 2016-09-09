@@ -286,5 +286,7 @@ But you may use safer HTTPS instead.")
 (require-package 'try)
 (require-package 'magit)
 (require-package 'weibo)
+(require-package 'golden-ratio)
+
 
 (provide 'init-elpa)
