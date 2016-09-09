@@ -139,6 +139,7 @@
   (require 'init-smartparens)
   (require 'init-magit)
   (require 'init-diminish)
+  (require 'init-weibo)
 
   ;; {{ idle require other stuff
   (setq idle-require-idle-delay 2)

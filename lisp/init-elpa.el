@@ -63,6 +63,7 @@ But you may use safer HTTPS instead.")
     company-c-headers
     material-theme
     undo-tree
+    weibo
     try)
   "Don't install any Melpa packages except these packages")
 
@@ -284,5 +285,6 @@ But you may use safer HTTPS instead.")
 (require-package 'powerline)
 (require-package 'try)
 (require-package 'magit)
+(require-package 'weibo)
 
 (provide 'init-elpa)
