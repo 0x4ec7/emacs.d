@@ -138,9 +138,9 @@
   (require 'init-flycheck)
   (require 'init-smartparens)
   (require 'init-magit)
-  (require 'init-diminish)
   (require 'init-weibo)
   (require 'init-golden-ratio)
+  (require 'init-diminish)
 
   ;; {{ idle require other stuff
   (setq idle-require-idle-delay 2)

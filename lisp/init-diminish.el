@@ -12,10 +12,14 @@
   '(diminish 'smartparens-mode))
 (eval-after-load "files"
   '(diminish 'auto-revert-mode))
-(eval-after-load "paredit"
- '(diminish 'paredit-mode))
 (eval-after-load "eldoc"
   '(diminish 'eldoc-mode))
+(eval-after-load "golden-ratio"
+  '(diminish 'golden-ratio-mode))
+(eval-after-load "paredit"
+ '(diminish 'paredit-mode))
+(eval-after-load "highlight-indentation"
+  '(diminish 'highlight-indentation-mode))
 
 (eval-after-load "undo-tree"
   '(diminish 'undo-tree-mode " Ⓤ "))
@@ -29,6 +33,8 @@
   '(diminish 'flycheck-mode " Ⓕ "))
 (eval-after-load "evil-escape"
   '(diminish 'evil-escape-mode " Ⓥ "))
+(eval-after-load "elpy"
+  '(diminish 'elpy-mode " Ⓔ "))
 
 
 (provide 'init-diminish)
