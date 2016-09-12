@@ -142,6 +142,11 @@
   (require 'init-golden-ratio)
   (require 'init-diminish)
 
+  ;; Allow access from emacsclient
+  (require 'server)
+  (unless (server-running-p)
+    (server-start))
+
   ;; {{ idle require other stuff
   (setq idle-require-idle-delay 2)
   (setq idle-require-symbols '(init-perforce
