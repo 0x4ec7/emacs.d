@@ -12,9 +12,6 @@
 (bind-key* "C-c C-a" 'mc/mark-all-symbols-like-this)
 (bind-key* "C-c C-s" 'mc--mark-symbol-at-point)
 
-(require 'fiplr)
-(bind-key* "C-x C-f" 'fiplr-find-file)
-
 (require 'window-numbering)
 (bind-key* "C-x <up>" 'windove-up)
 (bind-key* "C-x <down>" 'windmove-down)
@@ -49,7 +46,7 @@
 (bind-key* "C-x C-b" 'ibuffer-other-window)
 (bind-key* "C-h f" 'counsel-describe-function)
 (bind-key* "C-c k" 'counsel-git-grep)
-(bind-key* "C-c f" 'counsel-find-file)
+(bind-key* "C-x C-f" 'counsel-find-file)
 
 
 (provide 'init-bind-key)

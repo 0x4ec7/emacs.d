@@ -269,7 +269,6 @@ But you may use safer HTTPS instead.")
 (require-package 'dumb-jump)
 (require-package 'emms)
 (require-package 'package-lint) ; lint package before submit it to MELPA
-(require-package 'fiplr)
 (require-package 'window-numbering)
 (require-package 'undo-tree)
 (require-package 'neotree)
