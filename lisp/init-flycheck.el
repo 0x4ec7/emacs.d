@@ -13,5 +13,7 @@
      (flycheck-tip-use-timer 'verbose)))
 
 (add-hook 'after-init-hook 'global-flycheck-mode)
+(add-hook 'flycheck-error-list-mode-hook 'evil-emacs-state)
+
 
 (provide 'init-flycheck)
