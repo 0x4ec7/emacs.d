@@ -139,7 +139,7 @@
   (require 'init-smartparens)
   (require 'init-magit)
   (require 'init-weibo)
-  (require 'init-golden-ratio)
+  ;; (require 'init-golden-ratio)
   (require 'init-diminish)
 
   ;; Allow access from emacsclient
