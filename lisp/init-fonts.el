@@ -1,5 +1,7 @@
 (require 'cl)
 
+;; set default font
+(set-face-attribute 'default nil :font "Hack")
 
 (defun font-name-replace-size (font-name new-size)
   (let ((parts (split-string font-name "-")))

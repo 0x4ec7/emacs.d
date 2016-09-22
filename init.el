@@ -119,6 +119,7 @@
   ;; need statistics of keyfreq asap
   (require 'init-keyfreq)
   (require 'init-httpd)
+  (require 'init-fonts)
 
   ;; projectile costs 7% startup time
 
@@ -152,7 +153,6 @@
   (setq idle-require-symbols '(init-perforce
                                init-misc-lazy
                                init-which-func
-                               init-fonts
                                init-hs-minor-mode
                                init-writting
                                init-pomodoro
