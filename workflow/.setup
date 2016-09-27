@@ -1,0 +1,15 @@
+# for .bashrc or .zshrc
+# if [ -f ~/.emacs.d/workflow/.setup ]; then
+#    source ~/.emacs.d/workflow/.setup
+# fi
+
+# workflow
+# provided by mjwall, https://github.com/mjwall/dotfiles
+export PATH=$PATH:~/.emacs.d/workflow/bin
+export ALTERNATE_EDITOR=""
+export EDITOR=et
+export VISUAL=ec
+
+# aliases
+alias e=ec
+alias magit='ec -e "(magit-status \"$(pwd)\")"'
