@@ -13,7 +13,8 @@
 ;;    (define-key elpy-mode-map (kbd "M-TAB") nil)
     (setq electric-indent-chars (delq ?: electric-indent-chars))
     (setq require-final-newline t)
-    (setq mode-require-final-newline t)))
+    (setq mode-require-final-newline t)
+    (define-key evil-normal-state-map "go" 'elpy-goto-definition-other-window)))
 
 (add-hook 'python-mode-hook 'python-mode-hook-setup)
 
