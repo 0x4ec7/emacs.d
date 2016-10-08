@@ -64,6 +64,8 @@ But you may use safer HTTPS instead.")
     material-theme
     undo-tree
     weibo
+    goto-chg
+    evil-mc
     try)
   "Don't install any Melpa packages except these packages")
 
@@ -286,6 +288,8 @@ But you may use safer HTTPS instead.")
 (require-package 'magit)
 (require-package 'weibo)
 (require-package 'golden-ratio)
+(require-package 'goto-chg)
+(require-package 'evil-mc)
 
 
 (provide 'init-elpa)

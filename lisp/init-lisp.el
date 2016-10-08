@@ -27,7 +27,7 @@
 
 (eval-after-load 'paredit
   '(progn
-     (diminish 'paredit-mode " Par")))
+     (diminish 'paredit-mode)))
 
 
 (defvar paredit-minibuffer-commands '(eval-expression

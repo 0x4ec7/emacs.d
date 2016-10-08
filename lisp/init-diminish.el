@@ -16,8 +16,6 @@
   '(diminish 'eldoc-mode))
 (eval-after-load "golden-ratio"
   '(diminish 'golden-ratio-mode))
-(eval-after-load "paredit"
- '(diminish 'paredit-mode))
 (eval-after-load "highlight-indentation"
   '(diminish 'highlight-indentation-mode))
 
@@ -35,6 +33,8 @@
   '(diminish 'evil-escape-mode " Ⓥ "))
 (eval-after-load "elpy"
   '(diminish 'elpy-mode " Ⓔ "))
+(eval-after-load "evil-mc"
+  '(diminish 'evil-mc-mode " Ⓜ "))
 
 
 (provide 'init-diminish)
