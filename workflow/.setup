@@ -11,4 +11,4 @@ export EDITOR=et
 export VISUAL=ec
 
 # aliases
-alias magit='ec -e "(magit-status \"$(pwd)\")"'
+alias magit='et -e "(magit-status \"$(pwd)\")"'
