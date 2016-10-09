@@ -51,7 +51,7 @@
 ;; ----------------------------------------------------------------------------
 (defun sanityinc/lisp-setup ()
   "Enable features useful in any Lisp mode."
-  (enable-paredit-mode)
+  ;; (enable-paredit-mode)
   (rainbow-delimiters-mode t)
   (turn-on-eldoc-mode))
 
