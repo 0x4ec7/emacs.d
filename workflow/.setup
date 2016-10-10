@@ -8,7 +8,7 @@
 export PATH=$PATH:~/.emacs.d/workflow/bin
 export ALTERNATE_EDITOR=""
 export EDITOR=et
-export VISUAL=ec
+# export VISUAL=ec
 
 # aliases
 alias magit='et -e "(magit-status \"$(pwd)\")"'
