@@ -66,6 +66,7 @@ But you may use safer HTTPS instead.")
     weibo
     goto-chg
     evil-mc
+    swiper
     try)
   "Don't install any Melpa packages except these packages")
 
