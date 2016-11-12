@@ -1,6 +1,4 @@
-#name : LATEX
+#name : Title Block
 #contributor : Rick Moynihan <rick@sourcesmouth.co.uk>
 # --
-#+BEGIN_LATEX
-${0}
-#+END_LATEX
+#+TITLE: ${1:title}

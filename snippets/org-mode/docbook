@@ -1,6 +1,6 @@
-#name : LATEX
+#name : DOCBOOK
 #contributor : Rick Moynihan <rick@sourcesmouth.co.uk>
 # --
-#+BEGIN_LATEX
+#+BEGIN_DOCBOOK
 ${0}
-#+END_LATEX
+#+END_DOCBOOK

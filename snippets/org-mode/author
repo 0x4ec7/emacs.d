@@ -1,6 +1,4 @@
-#name : LATEX
+#name : Author
 #contributor : Rick Moynihan <rick@sourcesmouth.co.uk>
 # --
-#+BEGIN_LATEX
-${0}
-#+END_LATEX
+#+AUTHOR: ${1:`user-full-name`}

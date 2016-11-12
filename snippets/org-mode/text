@@ -1,6 +1,4 @@
-#name : LATEX
+#name : Text
 #contributor : Rick Moynihan <rick@sourcesmouth.co.uk>
 # --
-#+BEGIN_LATEX
-${0}
-#+END_LATEX
+#+TEXT: ${1:text}
