@@ -242,4 +242,5 @@ If use-indirect-buffer is not nil, use `indirect-buffer' to hold the widen conte
   (interactive "P")
   (org-agenda arg "n"))
 
+
 (provide 'init-org)
