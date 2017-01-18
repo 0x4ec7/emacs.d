@@ -87,7 +87,6 @@
         evil-join
         evil-jump-backward
         evil-jump-forward
-        evil-mc-make-and-goto-next-match
         evil-next-line
         evil-next-visual-line
         evil-normal-state

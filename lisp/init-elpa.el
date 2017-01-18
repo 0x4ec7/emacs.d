@@ -65,7 +65,6 @@ But you may use safer HTTPS instead.")
     undo-tree
     weibo
     goto-chg
-    evil-mc
     swiper
     try)
   "Don't install any Melpa packages except these packages")
@@ -290,7 +289,6 @@ But you may use safer HTTPS instead.")
 (require-package 'weibo)
 (require-package 'golden-ratio)
 (require-package 'goto-chg)
-(require-package 'evil-mc)
 
 
 (provide 'init-elpa)

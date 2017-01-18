@@ -41,10 +41,6 @@
 ;; enable evil-mode
 (evil-mode 1)
 
-;; enable evil-mc-mode
-(require 'evil-mc)
-(global-evil-mc-mode 1)
-
 ;; {{ @see https://github.com/timcharper/evil-surround for tutorial
 (require 'evil-surround)
 (global-evil-surround-mode 1)

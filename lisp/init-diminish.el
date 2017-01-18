@@ -31,8 +31,6 @@
   '(diminish 'evil-escape-mode " Ⓥ "))
 (eval-after-load "elpy"
   '(diminish 'elpy-mode " Ⓔ "))
-(eval-after-load "evil-mc"
-  '(diminish 'evil-mc-mode " Ⓜ "))
 
 
 (provide 'init-diminish)
