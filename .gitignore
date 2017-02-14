@@ -58,3 +58,4 @@ srecode-map.el
 custom-set-variables.el
 .smex-items
 bookmarks
+request/

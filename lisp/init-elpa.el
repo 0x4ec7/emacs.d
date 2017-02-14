@@ -66,6 +66,7 @@ But you may use safer HTTPS instead.")
     weibo
     goto-chg
     swiper
+    ein
     try)
   "Don't install any Melpa packages except these packages")
 
@@ -289,6 +290,7 @@ But you may use safer HTTPS instead.")
 (require-package 'weibo)
 (require-package 'golden-ratio)
 (require-package 'goto-chg)
+(require-package 'ein)
 
 
 (provide 'init-elpa)
