@@ -31,6 +31,8 @@
   '(diminish 'evil-escape-mode " Ⓥ "))
 (eval-after-load "elpy"
   '(diminish 'elpy-mode " Ⓔ "))
+(eval-after-load "ivy"
+  '(diminish 'ivy-mode " Ⓘ "))
 
 
 (provide 'init-diminish)
