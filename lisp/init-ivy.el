@@ -469,8 +469,9 @@ If N is nil, use `ivy-mode' to browse the `kill-ring'."
 ;; }}
 
 (setq ivy-re-builders-alist
-      '((t . ivy--regex-fuzzy)))
-(setq ivy-initial-inputs-alist nil)
+      '((swiper . ivy--regex-plus)
+        (t . ivy--regex-fuzzy)))
+;; (setq ivy-initial-inputs-alist nil)
 
 (global-set-key (kbd "M-x") 'counsel-M-x)
 
