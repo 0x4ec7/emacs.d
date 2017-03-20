@@ -291,6 +291,8 @@ But you may use safer HTTPS instead.")
 (require-package 'golden-ratio)
 (require-package 'goto-chg)
 (require-package 'ein)
+(require-package 'org-pomodoro)
+(require-package 'org-bullets)
 
 
 (provide 'init-elpa)

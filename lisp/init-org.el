@@ -242,5 +242,8 @@ If use-indirect-buffer is not nil, use `indirect-buffer' to hold the widen conte
   (interactive "P")
   (org-agenda arg "n"))
 
+(require 'org-bullets)
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+
 
 (provide 'init-org)
