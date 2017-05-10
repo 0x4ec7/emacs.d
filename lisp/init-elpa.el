@@ -67,6 +67,8 @@ But you may use safer HTTPS instead.")
     goto-chg
     swiper
     ein
+    websocket
+    request
     try)
   "Don't install any Melpa packages except these packages")
 
