@@ -329,6 +329,9 @@ If the character before and after CH is space or tab, CH is NOT slash"
         (browse-kill-ring-mode . normal)
         (etags-select-mode . normal)
         (js2-error-buffer-mode . emacs)
+        (circe-server-mode . emacs)
+        (circe-channel-mode . emacs)
+        (flycheck-error-list-mode . emacs)
         )
       do (evil-set-initial-state mode state))
 

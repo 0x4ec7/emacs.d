@@ -295,6 +295,7 @@ But you may use safer HTTPS instead.")
 (require-package 'ein)
 (require-package 'org-pomodoro)
 (require-package 'org-bullets)
+(require-package 'circe)
 
 
 (provide 'init-elpa)

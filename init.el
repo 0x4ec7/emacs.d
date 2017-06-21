@@ -146,6 +146,7 @@
   (require 'init-weibo)
   ;; (require 'init-golden-ratio)
   (require 'init-diminish)
+  (require 'init-irc)
 
   ;; Allow access from emacsclient
   (require 'server)
